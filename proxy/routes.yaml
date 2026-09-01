@@ -1,0 +1,20 @@
+# ShowCall migration route table.
+#
+# Longest matching path prefix wins. For the winning prefix, the org (from the
+# X-Org-Id request header) is looked up in `orgs`; if absent, `default` applies.
+# Backends are named in docker-compose.yml: callboard (legacy) and encore (new).
+#
+# This file is re-read on every request. Migrating a route for an org is an edit
+# here; so is rolling it back.
+#
+# Example — org 7's crew endpoints served by Encore, everyone else stays on legacy:
+#
+#   "/callboard/crew/":
+#     default: callboard
+#     orgs:
+#       7: encore
+
+routes:
+  "/callboard/":
+    default: callboard
+    orgs: {}

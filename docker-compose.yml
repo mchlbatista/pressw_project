@@ -1,0 +1,66 @@
+# ShowCall assessment stack.
+#
+#   docker compose up --build -d
+#
+# The callboard image is pulled from a registry on first run; everything else builds
+# locally. Works on both Apple silicon and x86 (the image is multi-arch).
+#
+# Ports on your machine:
+#   8080  gateway (all traffic should go through here)
+#   8091  callboard direct (legacy black box - probing it directly is fine)
+#   8092  encore direct (your service)
+#   5432  postgres (fully open: showcall/showcall, db "showcall")
+#
+# Reset to a pristine database at any time:  docker compose down -v && docker compose up -d
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: showcall
+      POSTGRES_PASSWORD: showcall
+      POSTGRES_DB: showcall
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U showcall"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  callboard:
+    image: ghcr.io/pressw-llc/showcall-callboard:r129e453a77
+    environment:
+      DATABASE_URL: postgresql://showcall:showcall@db:5432/showcall
+    ports:
+      - "8091:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  encore:
+    build: ./encore
+    environment:
+      DATABASE_URL: postgresql+psycopg://showcall:showcall@db:5432/showcall
+    volumes:
+      - ./encore:/srv
+    ports:
+      - "8092:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  gateway:
+    build: ./proxy
+    environment:
+      CALLBOARD_URL: http://callboard:8080
+      ENCORE_URL: http://encore:8080
+      ROUTES_FILE: /srv/routes.yaml
+    volumes:
+      - ./proxy/routes.yaml:/srv/routes.yaml:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      - callboard
+      - encore

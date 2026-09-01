@@ -1,0 +1,51 @@
+{"method": "GET", "path": "/callboard/crew/list", "org": 3, "query": null, "form": null}
+{"method": "GET", "path": "/callboard/crew/list", "org": 3, "query": {"page": 1, "per_page": 5}, "form": null}
+{"method": "GET", "path": "/callboard/crew/list", "org": 3, "query": {"per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/crew/show", "org": 3, "query": {"crew_id": 1}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 3, "query": {"per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 3, "query": {"start": "11/01/2026", "end": "11/16/2026", "per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 3, "query": {"start": "11/12/2026", "end": "11/12/2026"}, "form": null}
+{"method": "GET", "path": "/callboard/shift/show", "org": 3, "query": {"shift_id": 3}, "form": null}
+{"method": "GET", "path": "/callboard/shift/roster_rows", "org": 3, "query": {"shift_id": 1}, "form": null}
+{"method": "GET", "path": "/callboard/message/list", "org": 3, "query": {"crew_id": 5}, "form": null}
+{"method": "POST", "path": "/callboard/crew/update", "org": 3, "query": null, "form": {"crew_id": 9, "notes": "cleared for fly rail as of this week"}}
+{"method": "POST", "path": "/callboard/shift/create", "org": 3, "query": null, "form": {"venue_id": 1, "title": "Emergency patch call", "starts": "12/04/2026 07:00", "ends": "12/04/2026 15:30", "slots": 2}}
+{"method": "POST", "path": "/callboard/assignment/offer", "org": 3, "query": null, "form": {"shift_id": 20, "crew_id": 13}}
+{"method": "POST", "path": "/callboard/assignment/accept", "org": 3, "query": null, "form": {"assignment_id": 23}}
+{"method": "POST", "path": "/callboard/message/confirm", "org": 3, "query": null, "form": {"message_id": 16}}
+{"method": "POST", "path": "/callboard/message/send", "org": 3, "query": null, "form": {"crew_id": 1, "body": "Park behind the dock tonight, alley is closed."}}
+{"method": "GET", "path": "/callboard/crew/list", "org": 7, "query": null, "form": null}
+{"method": "GET", "path": "/callboard/crew/list", "org": 7, "query": {"page": 1, "per_page": 5}, "form": null}
+{"method": "GET", "path": "/callboard/crew/list", "org": 7, "query": {"per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/crew/show", "org": 7, "query": {"crew_id": 2}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 7, "query": {"per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 7, "query": {"start": "11/01/2026", "end": "11/16/2026", "per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 7, "query": {"start": "11/12/2026", "end": "11/12/2026"}, "form": null}
+{"method": "GET", "path": "/callboard/shift/show", "org": 7, "query": {"shift_id": 23}, "form": null}
+{"method": "GET", "path": "/callboard/shift/roster_rows", "org": 7, "query": {"shift_id": 21}, "form": null}
+{"method": "GET", "path": "/callboard/message/list", "org": 7, "query": {"crew_id": 6}, "form": null}
+{"method": "POST", "path": "/callboard/crew/update", "org": 7, "query": null, "form": {"crew_id": 10, "notes": "cleared for fly rail as of this week"}}
+{"method": "POST", "path": "/callboard/shift/create", "org": 7, "query": null, "form": {"venue_id": 3, "title": "Emergency patch call", "starts": "12/04/2026 07:00", "ends": "12/04/2026 15:30", "slots": 2}}
+{"method": "POST", "path": "/callboard/assignment/offer", "org": 7, "query": null, "form": {"shift_id": 40, "crew_id": 14}}
+{"method": "POST", "path": "/callboard/assignment/accept", "org": 7, "query": null, "form": {"assignment_id": 83}}
+{"method": "POST", "path": "/callboard/message/confirm", "org": 7, "query": null, "form": {"message_id": 56}}
+{"method": "POST", "path": "/callboard/message/send", "org": 7, "query": null, "form": {"crew_id": 2, "body": "Park behind the dock tonight, alley is closed."}}
+{"method": "GET", "path": "/callboard/crew/list", "org": 12, "query": null, "form": null}
+{"method": "GET", "path": "/callboard/crew/list", "org": 12, "query": {"page": 1, "per_page": 5}, "form": null}
+{"method": "GET", "path": "/callboard/crew/list", "org": 12, "query": {"per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/crew/show", "org": 12, "query": {"crew_id": 3}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 12, "query": {"per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 12, "query": {"start": "11/01/2026", "end": "11/16/2026", "per_page": 0}, "form": null}
+{"method": "GET", "path": "/callboard/shift/list", "org": 12, "query": {"start": "11/12/2026", "end": "11/12/2026"}, "form": null}
+{"method": "GET", "path": "/callboard/shift/show", "org": 12, "query": {"shift_id": 45}, "form": null}
+{"method": "GET", "path": "/callboard/shift/roster_rows", "org": 12, "query": {"shift_id": 41}, "form": null}
+{"method": "GET", "path": "/callboard/message/list", "org": 12, "query": {"crew_id": 7}, "form": null}
+{"method": "POST", "path": "/callboard/crew/update", "org": 12, "query": null, "form": {"crew_id": 11, "notes": "cleared for fly rail as of this week"}}
+{"method": "POST", "path": "/callboard/shift/create", "org": 12, "query": null, "form": {"venue_id": 5, "title": "Emergency patch call", "starts": "12/04/2026 07:00", "ends": "12/04/2026 15:30", "slots": 2}}
+{"method": "POST", "path": "/callboard/assignment/offer", "org": 12, "query": null, "form": {"shift_id": 50, "crew_id": 15}}
+{"method": "POST", "path": "/callboard/assignment/accept", "org": 12, "query": null, "form": {"assignment_id": 143}}
+{"method": "POST", "path": "/callboard/message/confirm", "org": 12, "query": null, "form": {"message_id": 96}}
+{"method": "POST", "path": "/callboard/message/send", "org": 12, "query": null, "form": {"crew_id": 3, "body": "Park behind the dock tonight, alley is closed."}}
+{"method": "POST", "path": "/callboard/shift/cancel", "org": 7, "query": null, "form": {"shift_id": 30}}
+{"method": "GET", "path": "/callboard/shift/show", "org": 7, "query": {"shift_id": 30}, "form": null}
+{"method": "GET", "path": "/callboard/crew/show", "org": 19, "query": {"crew_id": 1}, "form": null}
