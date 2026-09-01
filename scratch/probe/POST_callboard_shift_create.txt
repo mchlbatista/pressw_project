@@ -1,0 +1,3 @@
+[ 11] 200 via -: POST /callboard/shift/create
+{"data":{"ends":"12/04/2026 15:30","lead":"","open_slots":2,"org_id":3,"shift_id":61,"slots":2,"staffing_status":"OPEN","starts":"12/04/2026 07:00","title":"Emergency patch call","venue":"The Aldwych"},"result":"ok","tg_flash":null}
+

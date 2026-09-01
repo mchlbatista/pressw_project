@@ -15,6 +15,18 @@
 #       7: encore
 
 routes:
+  "/callboard/crew/":
+    default: callboard
+    orgs:
+      7: encore
+  "/callboard/shift/":
+    default: callboard
+    orgs:
+      7: encore
+  "/callboard/assignment/":
+    default: callboard
+    orgs:
+      7: encore
   "/callboard/":
     default: callboard
     orgs: {}

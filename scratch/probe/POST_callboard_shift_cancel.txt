@@ -1,0 +1,3 @@
+[ 48] 200 via -: POST /callboard/shift/cancel
+{"data":{"cancelled":30,"notified":3},"result":"ok","tg_flash":null}
+

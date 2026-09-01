@@ -1,0 +1,6 @@
+ id | org_id |  kind  |                      payload                       | queued_at  
+----+--------+--------+----------------------------------------------------+------------
+  5 |      3 | ACCEPT | {"assignment_id": 23, "crew_id": 5, "shift_id": 8} | 1788241899
+  6 |      3 | ACCEPT | {"assignment_id": 24, "crew_id": 9, "shift_id": 8} | 1788241899
+(2 rows)
+

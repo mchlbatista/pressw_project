@@ -1,0 +1,10 @@
+     relname     | n_live_tup | n_tup_ins | n_tup_upd | n_tup_del 
+-----------------+------------+-----------+-----------+-----------
+ assignments     |        180 |       180 |        84 |         0
+ callboard_queue |          0 |         4 |         0 |         4
+ messages        |        122 |       122 |         0 |         0
+ shifts          |         60 |        60 |        60 |         0
+ tg_crew         |         32 |        32 |         0 |         0
+ venues          |          6 |         6 |         0 |         0
+(6 rows)
+
