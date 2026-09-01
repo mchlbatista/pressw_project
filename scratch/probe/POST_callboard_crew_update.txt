@@ -1,0 +1,3 @@
+[ 10] 200 via -: POST /callboard/crew/update
+{"data":{"crew_id":9,"crew_name":"priya.raman@meridianstage.example","display_name":"P. Raman","is_lead":"N","notes":"cleared for fly rail as of this week","org":3,"rate":"26.75"},"result":"ok","tg_flash":null}
+

@@ -1,0 +1,4 @@
+[  8] 200 via -: GET /callboard/shift/roster_rows
+<tr class="cb-row" data-aid="1"><td>M. Kowalski</td><td>Accepted</td><td>$310.00</td></tr>
+<tr class="cb-row" data-aid="2"><td>D. Avery</td><td>Offered</td><td>&mdash;</td></tr>
+<tr class="cb-row" data-aid="3"><td>P. Raman</td><td>Offered</td><td>&mdash;</td></tr>

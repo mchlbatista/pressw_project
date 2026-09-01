@@ -1,0 +1,3 @@
+[  3] 200 via -: GET /callboard/crew/show
+{"data":{"crew_id":1,"crew_name":"marta.kowalski@meridianstage.example","display_name":"M. Kowalski","is_lead":"Y","notes":"head rigger, day calls preferred","org":3,"prefs":"{\"sms\": \"Y\", \"ui_rows\": 25, \"digest\": \"Y\"}","rate":"31.00"},"result":"ok","tg_flash":null}
+

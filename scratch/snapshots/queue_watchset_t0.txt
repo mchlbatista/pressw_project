@@ -1,0 +1,8 @@
+ id | org_id |  kind  |                      payload                       | queued_at  
+----+--------+--------+----------------------------------------------------+------------
+  1 |      3 | ACCEPT | {"assignment_id": 1, "crew_id": 1, "shift_id": 1}  | 1788240754
+  2 |      3 | ACCEPT | {"assignment_id": 4, "crew_id": 1, "shift_id": 2}  | 1788240754
+  3 |      3 | ACCEPT | {"assignment_id": 7, "crew_id": 1, "shift_id": 3}  | 1788240754
+  4 |      3 | ACCEPT | {"assignment_id": 10, "crew_id": 1, "shift_id": 4} | 1788240754
+(4 rows)
+

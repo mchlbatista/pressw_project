@@ -1,0 +1,3 @@
+[ 13] 200 via -: POST /callboard/assignment/accept
+{"data":{"assignment_id":23,"crew_id":5,"crew_name":"deshawn.avery@meridianstage.example","pay_estimate":"122.50","shift_id":8,"shift_title":"Matinee changeover \u2014 The Aldwych","status":"A"},"result":"ok","tg_flash":null}
+
