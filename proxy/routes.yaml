@@ -23,6 +23,12 @@ routes:
     default: callboard
     orgs:
       7: encore
+  # assignment/accept must stay on callboard until wave 3 (paired with message/confirm -
+  # see SEAMS.md's wave 2/3 boundary mitigation). This more specific prefix wins over
+  # "/callboard/assignment/" below for the org 7 override.
+  "/callboard/assignment/accept":
+    default: callboard
+    orgs: {}
   "/callboard/assignment/":
     default: callboard
     orgs:
